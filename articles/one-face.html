@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>One face, twelve pages — Prompting Manga</title>
+  <meta name="description" content="How to write a character lock you paste unchanged: age, two or three marks, hair as a silhouette, clothes as objects. Consistency is a paragraph you stop rewriting.">
+  <meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14110e" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="top">
+    <a class="brand" href="../index.html">
+      <span class="hanko" aria-hidden="true">描</span>
+      <span class="brand-name">Prompting Manga<small>Issue 01 · 第一号</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="../index.html">The issue</a>
+      <a href="../path.html">The path</a>
+      <a href="../about.html">Colophon</a>
+    </nav>
+  </header>
+
+  <main id="main" class="essay-wrap">
+    <article>
+      <header class="essay-head">
+        <p class="eyebrow"><a href="../path.html">The prompting path</a> · 02 · Craft</p>
+        <h1>One face, twelve pages</h1>
+        <p class="standfirst">Consistency is a paragraph you stop rewriting.</p>
+        <p class="byline"><span>Prompting Manga</span><span>Issue 01</span><span>4 min</span></p>
+      </header>
+
+      <figure class="figure">
+        <img src="../assets/face.jpg" width="1248" height="832" alt="Ink portrait of an adult woman with short uneven black hair, one strand across the eye, a scar through the eyebrow, and a worn jacket drawn in halftone.">
+        <figcaption>A lock, drawn once. Hair as a silhouette, one scar, one jacket.</figcaption>
+      </figure>
+
+      <div class="prose">
+        <p class="drop">Models drift because each prompt is a new introduction. Describe the person differently on page two — softer one time, sharper the next — and you have asked for a different person, then blamed the tool.</p>
+        <p>Write a lock. A lock is a short paragraph you paste, unchanged, at the top of every panel prompt in the sequence. It is not a biography. It is geometry, hair as a shape, and clothes as objects.</p>
+
+        <h2>What goes in</h2>
+        <p>Use an adult age as a number or a decade. “Young” is how a drawing slides toward a teenager. Say thirty-two, or “in her early thirties,” and keep saying it.</p>
+        <p>Face, in plain words, and few of them. A scar through one eyebrow. A strand that falls over the left eye. Two or three marks are enough to hold. More than that and the model averages them away. “Beautiful” holds nothing.</p>
+        <p>Hair is a silhouette. “Short, uneven, one strand over the left eye” survives from panel to panel. A fashion name for the cut does not. It becomes a different haircut every time the model tries to be current.</p>
+        <p>Wardrobe is a list of garments, not a brand and not a costume genre. An indigo work jacket. A white shirt. The top button open. If the jacket comes off, that is a story event. Write the change. Do not quietly drop the garment and hope the face carries the person alone.</p>
+
+        <figure class="specimen">
+          <figcaption>
+            <span>Specimen · a lock</span>
+            <button type="button" data-copy>Copy</button>
+          </figcaption>
+          <pre>An original woman in her early thirties. Short uneven black hair, one longer strand over her left eye, a small scar through the left eyebrow. Worn indigo work jacket over a plain white shirt. Keep this face, this hair, and this jacket the same.</pre>
+        </figure>
+
+        <figure class="specimen">
+          <figcaption>
+            <span>Specimen · a panel that uses the lock</span>
+            <button type="button" data-copy>Copy</button>
+          </figcaption>
+          <pre>An original woman in her early thirties. Short uneven black hair, one longer strand over her left eye, a small scar through the left eyebrow. Worn indigo work jacket over a plain white shirt. Keep this face, this hair, and this jacket the same.
+
+She sits at a small kitchen table, medium shot, slight high angle, noon light from a window on the right. Both hands around a cup. The left third of the panel is empty table. Manga ink line, tone only on the jacket. No lettering.</pre>
+        </figure>
+
+        <h2>What stays out</h2>
+        <p>Keep the lock boring. The panel prompt under it carries the verb, the shot, and the room. The lock carries the person. When panel four looks better than panel one, you will want to “improve” the lock to match it. Don’t. You will split the character in two. Note the improvement for the next story, and finish this one with the paragraph you started with.</p>
+        <p>Do not lock a living author’s character, and do not lock an actor. Describe someone you invented. A borrowed face is not a shortcut. It is a second person the model is trying to please, and that face will not sit still either.</p>
+        <p>If you can attach a reference picture, attach the same one every time, and still paste the lock. The words say which parts of the picture are law and which parts belong to this panel. Without that, the reference is a suggestion and the new prompt is a competing suggestion.</p>
+
+        <h2>Check the picture against the lock</h2>
+        <p>Not against your mood. Strand over the left eye, or the right? Scar present? Jacket still indigo, or suddenly black leather? If the action is wrong, fix the panel prompt. Change the lock only when every panel is wrong in the same way — then change it once, and regenerate the sequence, not only the latest picture.</p>
+
+        <blockquote class="pull">
+          <p>A lock is not a negative prompt. “Not a different person” does not say who to draw.</p>
+        </blockquote>
+
+        <p class="note">State the person. Then state the panel. The order matters, because the second paragraph is allowed to change and the first is not.</p>
+      </div>
+
+      <nav class="pager" aria-label="Along the path">
+        <a class="prev" href="panel-grammar.html"><span>Previous</span>The grammar of a panel</a>
+        <a class="next" href="screentone.html"><span>Next</span>Screentone is a decision</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-foot">
+    <p class="foot-brand"><span class="hanko" aria-hidden="true">描</span> Prompting Manga</p>
+    <p>Issue 01 · The prompting path · September 2026. A static journal. No accounts.</p>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="../index.html">The issue</a>
+      <a href="../path.html">The path</a>
+      <a href="../about.html">Colophon</a>
+    </nav>
+  </footer>
+  <script src="../js/site.js"></script>
+</body>
+</html>

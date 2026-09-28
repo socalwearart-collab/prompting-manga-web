@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leave the gutter empty — Prompting Manga</title>
+  <meta name="description" content="Prompt one manga panel at a time. Leave lettering, speed lines, and the next panel out of the picture. The gutter is the cut you do not draw.">
+  <meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14110e" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="top">
+    <a class="brand" href="../index.html">
+      <span class="hanko" aria-hidden="true">描</span>
+      <span class="brand-name">Prompting Manga<small>Issue 01 · 第一号</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="../index.html">The issue</a>
+      <a href="../path.html">The path</a>
+      <a href="../about.html">Colophon</a>
+    </nav>
+  </header>
+
+  <main id="main" class="essay-wrap">
+    <article>
+      <header class="essay-head">
+        <p class="eyebrow"><a href="../path.html">The prompting path</a> · 04 · Craft</p>
+        <h1>Leave the gutter empty</h1>
+        <p class="standfirst">The cut lives in the space you do not draw. Prompt the panel. Leave the furniture of the page alone.</p>
+        <p class="byline"><span>Prompting Manga</span><span>Issue 01</span><span>4 min</span></p>
+      </header>
+
+      <figure class="figure">
+        <img src="../assets/gutter.jpg" width="1248" height="832" alt="Two manga panels of the same dusk street corner, separated by a wide blank gutter. A paper cup sits on the bench only in the second panel.">
+        <figcaption>The same corner, one fact later. The blank between them is the cut.</figcaption>
+      </figure>
+
+      <div class="prose">
+        <p class="drop">A gutter is the blank between panels. Readers cross it and understand that time moved. You can see it in the plate: the corner is the same, and then a cup is on the bench. Nobody needed a caption that said “later.”</p>
+        <p>If you ask a model for “a manga page” in one breath, it will try to be author, penciller, and letterer at once. It will glue the panels into a poster and put tiny unreadable marks in the balloons. Borders, page numbers, and captions are rules and type. They are the part a model is worst at, and the part you can do exactly afterwards.</p>
+
+        <h2>What to leave out</h2>
+        <p><em>Words.</em> Any of them. Speech, sound effects, signs you need someone to read. Reserve the area if a balloon will sit there — “open paper in the upper right” — and put the words in later, in a face you chose, spelled the way you spelled them.</p>
+        <p><em>Speed lines, as a habit.</em> They are a specific shot: impact, travel, panic. A conversation does not want them. Once you say “manga,” many models add them anyway. Take them back. “No speed lines. Still air. The background stops at the wall.”</p>
+        <p><em>A crowd of effects.</em> Flare, bloom, particles, a color grade. You are not failing to be modern. You are keeping the panel printable. Ink, paper, one tone.</p>
+        <p><em>The other panels.</em> Do not describe panel two inside the prompt for panel one. The model will try to show both stories at once, and you will get a summary instead of a cut.</p>
+
+        <h2>Empty is an instruction</h2>
+        <p>Negative space is not an absence of instructions. Write the empty part the way you write the full part. People skip this and then crop the result until it behaves. Cropping is a correction. The empty third is the composition.</p>
+
+        <figure class="specimen">
+          <figcaption>
+            <span>Specimen · one panel, with a margin</span>
+            <button type="button" data-copy>Copy</button>
+          </figcaption>
+          <pre>A single manga panel on a larger sheet of blank paper, with a clear margin around the panel border. Inside the panel: a street corner at dusk, an empty wooden bench, ink line, light tone only in the shadow of the building. No second panel, no page number, no caption, no speech balloons, no sound effects. The sky inside the panel is mostly open paper.</pre>
+        </figure>
+
+        <p>When you place two pictures like that side by side, the margin you insisted on becomes the gutter. The reader makes the cut. You do not draw the cut. The second prompt is allowed to change one fact — the cup is on the bench now — and should repeat the corner so the reader trusts it is the same place.</p>
+        <p>If you prompt a whole page because you want to see rhythm, a tall panel beside two short ones, say the layout as a map and still forbid lettering. Expect to redraw the panels that matter. A page prompt is a thumbnail you are allowed to throw away. The finished line is still one panel at a time.</p>
+
+        <blockquote class="pull">
+          <p>White is not unfinished. In black-and-white comics, white is a color you spend.</p>
+        </blockquote>
+
+        <p class="note">A panel that is mostly open paper and one dark coat will read from across a room. A panel that is full reads only with the page held close, and even then the eye does not know where to enter.</p>
+      </div>
+
+      <nav class="pager" aria-label="Along the path">
+        <a class="prev" href="screentone.html"><span>Previous</span>Screentone is a decision</a>
+        <a class="next" href="twelve-lines.html"><span>Next</span>A one-shot in twelve lines</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-foot">
+    <p class="foot-brand"><span class="hanko" aria-hidden="true">描</span> Prompting Manga</p>
+    <p>Issue 01 · The prompting path · September 2026. A static journal. No accounts.</p>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="../index.html">The issue</a>
+      <a href="../path.html">The path</a>
+      <a href="../about.html">Colophon</a>
+    </nav>
+  </footer>
+  <script src="../js/site.js"></script>
+</body>
+</html>

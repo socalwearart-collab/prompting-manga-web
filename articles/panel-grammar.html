@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The grammar of a panel — Prompting Manga</title>
+  <meta name="description" content="A manga panel is a sentence with slots: subject, shot, angle, light, and the space you leave empty. How to rewrite a bag of nouns into a panel you can cut from.">
+  <meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14110e" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="top">
+    <a class="brand" href="../index.html">
+      <span class="hanko" aria-hidden="true">描</span>
+      <span class="brand-name">Prompting Manga<small>Issue 01 · 第一号</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="../index.html">The issue</a>
+      <a href="../path.html">The path</a>
+      <a href="../about.html">Colophon</a>
+    </nav>
+  </header>
+
+  <main id="main" class="essay-wrap">
+    <article>
+      <header class="essay-head">
+        <p class="eyebrow"><a href="../path.html">The prompting path</a> · 01 · Craft</p>
+        <h1>The grammar of a panel</h1>
+        <p class="standfirst">A manga panel is a sentence. If you only list nouns, the picture has nothing to do.</p>
+        <p class="byline"><span>Prompting Manga</span><span>Issue 01</span><span>4 min</span></p>
+      </header>
+
+      <figure class="figure">
+        <img src="../assets/panel.jpg" width="1248" height="832" alt="Manga panel of a woman in a dark coat paused in a doorway, one hand on the frame, the upper half of the picture left as bare wall.">
+        <figcaption>Plate for specimen B. Medium shot, eye level, the upper half left empty.</figcaption>
+      </figure>
+
+      <div class="prose">
+        <p class="drop">A prompt that reads “manga girl, city, night, detailed, masterpiece” is not a panel. It is a bag of nouns. The model will pick a pose, a crop, and a mood for you, and it will pick the average of all of them.</p>
+        <p>A panel has slots. You do not need every slot every time. You do need to know which ones you left blank on purpose.</p>
+
+        <h2>The slots</h2>
+        <p><em>Subject.</em> Who is in the frame, and what they are doing at this instant. Not their personality. The verb. She keeps one hand on the door. He does not look up from the bowl.</p>
+        <p><em>Shot.</em> How much of the person or the place we are allowed to see. Extreme close-up, close-up, medium, full figure, wide. Say it in those words. “Dynamic” is not a shot.</p>
+        <p><em>Angle.</em> Eye level, slight high, high, slight low, low, overhead. Angle is an opinion about the person. A low angle makes a doorway feel like a gate. A high angle makes the same person look as if the room is larger than they are.</p>
+        <p><em>Light.</em> One direction, one quality. Morning from the left. A single tube on the ceiling. Name none, and the picture grows three light sources that do not agree.</p>
+        <p><em>Empty space.</em> Where the panel is not busy. This is the slot almost everyone skips, and it is the one that makes the picture look drawn instead of filled. “The upper half is bare wall.” “The right side is empty sky, kept clear for a balloon later.”</p>
+        <p>Balloon room is not a caption. You are reserving paper. If you ask the model to draw the words, it will invent letters. Ask it to leave the space, and set the type afterwards.</p>
+        <p>Then the line. What the ink is doing: clean contour, gray only on the coat, no background past the door frame.</p>
+
+        <h2>The same moment, three ways</h2>
+        <figure class="specimen">
+          <figcaption>
+            <span>Specimen A · a bag of nouns</span>
+            <button type="button" data-copy>Copy</button>
+          </figcaption>
+          <pre>manga style, woman, doorway, morning, coat, beautiful, highly detailed</pre>
+        </figure>
+        <figure class="specimen">
+          <figcaption>
+            <span>Specimen B · a sentence with slots</span>
+            <button type="button" data-copy>Copy</button>
+          </figcaption>
+          <pre>A manga panel, no lettering and no speech balloons. A woman in her thirties in a dark wool coat pauses in a narrow apartment doorway, one hand still on the frame, medium shot, eye level. Early morning light from the left. The upper half of the panel is bare wall and soft shadow. Clean ink line, gray tone only on the coat, the rest of the background left as open paper.</pre>
+        </figure>
+        <figure class="specimen">
+          <figcaption>
+            <span>Specimen C · the next panel</span>
+            <button type="button" data-copy>Copy</button>
+          </figcaption>
+          <pre>Same person, same doorway, same morning light. Close-up on her hand and the frame, the coat only a dark shape at the left edge. The rest of the panel is the pale door and a strip of wall. The upper right is empty paper. No lettering, no speed lines.</pre>
+        </figure>
+
+        <blockquote class="pull">
+          <p>A is a theme. B is a panel. C is the next panel.</p>
+        </blockquote>
+
+        <p>You get a cut by changing one or two slots — usually the shot or the angle — and keeping the others still. If everything changes, you did not cut. You changed the channel.</p>
+
+        <h2>When it comes back wrong</h2>
+        <p>Do not add adjectives. Find the slot that was empty and write it. If her face fills the frame, you never named the shot. If the hallway is a cathedral, you never said how close the walls are. If the mood is epic and you wanted a Tuesday morning, you asked for a feeling instead of a light.</p>
+        <p class="note">Feelings are allowed after the slots are filled, not instead of them. “She is tired” is weaker than “her shoulder rests against the frame, coat still on.”</p>
+      </div>
+
+      <nav class="pager" aria-label="Along the path">
+        <a class="next" href="one-face.html"><span>Next</span>One face, twelve pages</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-foot">
+    <p class="foot-brand"><span class="hanko" aria-hidden="true">描</span> Prompting Manga</p>
+    <p>Issue 01 · The prompting path · September 2026. A static journal. No accounts.</p>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="../index.html">The issue</a>
+      <a href="../path.html">The path</a>
+      <a href="../about.html">Colophon</a>
+    </nav>
+  </footer>
+  <script src="../js/site.js"></script>
+</body>
+</html>
